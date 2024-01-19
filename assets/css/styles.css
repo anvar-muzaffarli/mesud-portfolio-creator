@@ -9,8 +9,180 @@ body {
     text-decoration: none;
 }
 
+header nav a {
+    color:#000;
+}
+
+
+/* * 0-9 */
+
+
+
+
+/* * Breakpoints
+TODO 576px -dan kicik small devices
+
+576-768px //PRO MAX 
+
+768-992
+
+992-1024 Laptoplar
+1024-1200 PC
+1200- TV
+
+*/
+/* Mobile First Approach */
+
+
+nav {
+    display: none;
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    padding: 40px 113px 25px 112px;
+    align-items: center;
 }
+
+
+
+
+
+.introduction .left-side h1 span {
+    color: #FF8A56;
+}
+
+.introduction .left-side .book-a-call {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+
+.introduction .left-side .book-a-call button {
+    background: #2e2e2e;
+    width: 151px;
+padding: 20px 30px;
+color:#fff;
+}
+
+.introduction .right-side {
+    display: flex;
+    /* flex-direction: row; */ 
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.introduction .right-side img {
+    width: 300px;
+}
+
+.introduction .left-side h1 {
+    font-size: 34px;
+}
+
+
+@media(max-width:576px) {
+    .container {
+        max-width: 100%;
+    }
+
+  
+    
+}
+
+@media(min-width:576px) {
+    .introduction .right-side img {
+        width: 500px;
+    }
+}
+
+
+@media(min-width:375px) {
+    .introduction .left-side h1 {
+        font-size: 44px;
+    }
+}
+
+
+
+@media(min-width:576px) and (max-width:767px) {
+.container {
+    max-width: 540px;
+    margin: 40px auto;
+}
+
+
+
+
+}
+
+@media(min-width:768px) {
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+nav {
+    display: block;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.introduction .left-side h1 {
+    font-size: 74px;
+    text-align: center;
+}
+
+.introduction .left-side .book-a-call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+
+}
+
+@media(min-width:992px) {
+    .container {
+        max-width: 1200px;
+        margin: 40px auto;
+    }
+
+    .introduction {
+        display: flex;
+    }
+
+    .introduction .left-side h1 {
+        /* */
+    font-size: 72px;
+    
+    font-weight: 700;
+    text-align: left;
+    
+    }
+
+    .introduction .left-side .book-a-call {
+        justify-content: flex-start;
+    }
+
+   .introduction .right-side {
+        margin-top: 0;
+    }
+
+   
+
+ 
+
+
+}
+
+
+
